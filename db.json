@@ -1,0 +1,18 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Benny",
+      "hobbies": [
+        "long walks with mom",
+        "snacks",
+        "the river"
+      ],
+      "tricks": [
+        "bang", 
+        "good boy out of the kitchen", 
+        "dap me up"
+      ],
+      "location": "Point Breeze, Philadelphia"
+    }]
+  }
