@@ -1,6 +1,6 @@
 import React from "react"
 
-function DogDates({ dogs }) {
+function DogDates({ dogs, onUnMatch }) {
   const likeDogs = dogs.filter(dog => dog.matched === true)
     
     return (
@@ -14,6 +14,9 @@ function DogDates({ dogs }) {
               <li>age: {match.age}</li>
               <img src={match.image}
               alt={match.name}/>
+              <button onClick={() => onUnMatch(match.id)} className="emoji-button delete">
+               ❌un-match with {match.name}!
+              </button>
             </div>
           )
           })}
@@ -21,11 +24,9 @@ function DogDates({ dogs }) {
       </div>
     );
   }
+  export default DogDates
 
 
-export default DogDates
-
- /* map thro liked dogs, create list item with what we want to pass through */
 
 
 

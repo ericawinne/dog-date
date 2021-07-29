@@ -2,6 +2,9 @@ import React from "react"
 import DogCard from "./DogCard"
 
 function DogFinder({ onLiked, currentDogInfo, onNextDog }) {
+  const handleLike = () => {
+    onLiked(currentDogInfo.id)
+  }
 
   return (
 
@@ -10,9 +13,9 @@ function DogFinder({ onLiked, currentDogInfo, onNextDog }) {
        <DogCard dog={currentDogInfo} />
        <p>Name: {currentDogInfo.name}</p>
       {currentDogInfo.matched ? 
-        <button onClick={onLiked}>un-match!💔</button>
+        <button onClick={handleLike}>un-match!💔</button>
         : 
-        <button className="primary" onClick={onLiked}>Like</button>
+        <button className="primary" onClick={handleLike}>Like</button>
       }
        <button onClick={onNextDog}>Next Dog Please</button>
     </div>

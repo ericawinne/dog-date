@@ -4,6 +4,7 @@ import NavBar from "./NavBar"
 import DogFinder from "./DogFinder"
 import DogDates from "./DogDates"
 import NewDogProfile from "./NewDogProfile"
+import Home from "./Home"
 
 function App() {
   const [dogs, setDogs] = useState([]) 
@@ -15,13 +16,15 @@ function App() {
     setDogs(updatedDogFinderArray)
   }
 
-  const handleLikedToggle = () => {
+  const handleLikedToggle = (id) => {
     const updateObj = {
       matched: !currentDogInfo.matched
     };
-    alert("✨✨💕It's a Match!💕✨✨")
+    if (currentDogInfo.matched === false) {
+      alert("✨✨💕It's a Match!💕✨✨")
+    }
 
-    fetch(`http://localhost:4000/dogs/${currentDogInfo.id}`, {
+    fetch(`http://localhost:4000/dogs/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -29,11 +32,18 @@ function App() {
       body: JSON.stringify(updateObj),
     })
       .then((r) => r.json())
-      .then(data => setCurrentDogInfo(data))
+      .then(data => {
+        const updatedDogs = dogs.map(dog => {
+          if (dog.id === data.id) {
+            setCurrentDogInfo(data)
+            return data
+          } else return dog
+        })
+        setDogs(updatedDogs)
+      })
   }
 
   const handleNextDog = () => {
-    console.log(dogs.length, currentDog)
     if(currentDog < dogs.length-1) {
       setCurrentDog(currentDog => currentDog + 1)
     }
@@ -59,7 +69,7 @@ function App() {
     <div>
     <NavBar />
     <Switch>
-        <Route exact path="/">
+        <Route  path="/DogFinder">
             <DogFinder 
                 onLiked={handleLikedToggle} 
                 currentDogInfo={currentDogInfo} 
@@ -70,7 +80,10 @@ function App() {
             <NewDogProfile onAddDog={handleAddDog}/>
         </Route>
         <Route path="/DogDates">
-            <DogDates dogs={dogs}/>
+            <DogDates dogs={dogs} onUnMatch={handleLikedToggle} />
+        </Route>
+        <Route exact path="/" >
+            <Home />
         </Route>
     </Switch>
 </div>

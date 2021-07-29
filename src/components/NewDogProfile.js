@@ -75,7 +75,7 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-        <button type="submit">✅Submit to DogDate!</button>
+        <button type="submit" onClick={() => alert("Thank you for submitting!")} >✅Submit to DogDate!</button>
       </form>
     </div>
   );
