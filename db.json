@@ -46,16 +46,7 @@
       "trick": "dap me up",
       "location": "Center City, Philadelphia",
       "image": "https://dogtime.com/assets/uploads/gallery/rottweiler-dogs-and-puppies/rottweiler-dogs-puppies-1.jpg",
-      "matched": true
-    },
-    {
-      "name": "",
-      "age": "",
-      "hobby": "",
-      "trick": "",
-      "location": "",
-      "image": "",
-      "id": 5
+      "matched": false
     }
   ]
 }

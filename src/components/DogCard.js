@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 
-function DogCard({ dog }) {
-console.log(dog)
+function DogCard ({ dog }) {
+  console.log(dog)
 
   return (
       <div className="dogFinder-card">
         <img src={dog.image} alt={dog.name} />
-        <p>📍{dog.location}</p> 
+        <p>📍{dog.location}</p>
       </div>
   )
 }
-export default DogCard;
+export default DogCard

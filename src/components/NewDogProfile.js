@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function NewDogProfile({ onAddDog }) {   //NewPlantForm
+function NewDogProfile ({ onAddDog }) { // NewPlantForm
   const [name, setName] = useState("")
   const [age, setAge] = useState("")
   const [hobby, setHobby] = useState("")
@@ -8,12 +8,12 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
   const [location, setLocation] = useState("")
   const [image, setImage] = useState("")
 
-  function handleSubmit(e) {
+  function handleSubmit (e) {
     e.preventDefault()
     fetch("http://localhost:4000/dogs", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         name: name,
@@ -21,11 +21,11 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
         hobby: hobby,
         trick: trick,
         location: location,
-        image: image,
-      }),
+        image: image
+      })
     })
       .then((r) => r.json())
-      .then((newDog) => onAddDog(newDog));
+      .then((newDog) => onAddDog(newDog))
   }
 
   return (
@@ -47,7 +47,7 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
           onChange={(e) => setAge(e.target.value)}
         />
         <input
-          type="text"   //since its an array do i do something different here?
+          type="text" // since its an array do i do something different here?
           name="hobby"
           placeholder="Favorite Hobby"
           value={hobby}
@@ -55,7 +55,7 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
         />
         <input
           type="text"
-          name="tricks"  //since its an array, do i do something different here?
+          name="tricks" // since its an array, do i do something different here?
           placeholder="Best Trick"
           value={trick}
           onChange={(e) => setTrick(e.target.value)}
@@ -78,7 +78,7 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
         <button type="submit" onClick={() => alert("Thank you for submitting a new dog!💕")} >✅Submit to DogDate!</button>
       </form>
     </div>
-  );
+  )
 }
 
 export default NewDogProfile

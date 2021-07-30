@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react"
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom"
 import NavBar from "./NavBar"
 import DogFinder from "./DogFinder"
 import DogDates from "./DogDates"
 import NewDogProfile from "./NewDogProfile"
 import Home from "./Home"
 
-function App() {
-  const [dogs, setDogs] = useState([]) 
+function App () {
+  const [dogs, setDogs] = useState([])
   const [currentDog, setCurrentDog] = useState(0)
   const [currentDogInfo, setCurrentDogInfo] = useState(null)
 
-  function handleAddDog(newDog) {
+  function handleAddDog (newDog) {
     const updatedDogFinderArray = [...dogs, newDog]
     setDogs(updatedDogFinderArray)
   }
@@ -19,7 +19,7 @@ function App() {
   const handleLikedToggle = (id) => {
     const updateObj = {
       matched: !currentDogInfo.matched
-    };
+    }
     if (currentDogInfo.matched === false) {
       alert("✨✨💕It's a Match!💕✨✨")
     }
@@ -27,9 +27,9 @@ function App() {
     fetch(`http://localhost:4000/dogs/${id}`, {
       method: "PATCH",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(updateObj),
+      body: JSON.stringify(updateObj)
     })
       .then((r) => r.json())
       .then(data => {
@@ -44,24 +44,23 @@ function App() {
   }
 
   const handleNextDog = () => {
-    if(currentDog < dogs.length-1) {
+    if (currentDog < dogs.length - 1) {
       setCurrentDog(currentDog => currentDog + 1)
-    }
-    else {
+    } else {
       setCurrentDog(0)
     }
   }
-  
+
   useEffect(() => {
     fetch("http://localhost:4000/dogs")
-    .then((response) => response.json())
-    .then(data => {
-      setDogs(data) 
-      setCurrentDogInfo(data[currentDog])
-    })
+      .then((response) => response.json())
+      .then(data => {
+        setDogs(data)
+        setCurrentDogInfo(data[currentDog])
+      })
   }, [currentDog])
 
-  if(!currentDogInfo){
+  if (!currentDogInfo) {
     return <div>Loading...</div>
   }
 
@@ -69,10 +68,10 @@ function App() {
     <div>
     <NavBar />
     <Switch>
-        <Route  path="/DogFinder">
-            <DogFinder 
-                onLiked={handleLikedToggle} 
-                currentDogInfo={currentDogInfo} 
+        <Route path="/DogFinder">
+            <DogFinder
+                onLiked={handleLikedToggle}
+                currentDogInfo={currentDogInfo}
                 onNextDog={handleNextDog}
             />
         </Route>
@@ -87,7 +86,7 @@ function App() {
         </Route>
     </Switch>
 </div>
-)
+  )
 }
 
 export default App

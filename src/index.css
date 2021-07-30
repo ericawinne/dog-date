@@ -44,12 +44,17 @@ nav a.active {
   background-color: black;
   color: white;
 }
-
+/* above deals with styling for navlinks */
 .container {
-  padding: 200px 600px;
-  max-width: 400px;
-  max-height: 400px;
+  display:flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 } 
+/* above deals with DogDate */
 
 .dogFinder-card {
   text-align: center;
@@ -66,9 +71,30 @@ nav a.active {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
+  width: 50rem;
+  height: 50rem;
+  display: inline-block;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px#c7b5c5;
+} 
+
+.dogDate-cards {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
   width: 15rem;
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px#c7b5c5;
-} 
+}
+
+.dogMatchCard {
+  justify-self: center;
+  height: 10rem;
+  width: 10rem;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
