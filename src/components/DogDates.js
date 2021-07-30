@@ -4,11 +4,11 @@ function DogDates({ dogs, onUnMatch }) {
   const likeDogs = dogs.filter(dog => dog.matched === true)
     
     return (
-      <div className="card">
+      <div>
         <ul>
           {likeDogs.map((match) => {
           return (
-            <div>
+            <div className="container">
               <li>{match.name} "{match.nickname}"</li>
               <li>📍 {match.location}</li>
               <li>age: {match.age}</li>

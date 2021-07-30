@@ -6,19 +6,11 @@
       "nickname": "Butters",
       "age": "4",
       "pwo": "yes",
-      "hobbies": [
-        "long walks with mom",
-        "snacks",
-        "the river"
-      ],
-      "tricks": [
-        "bang",
-        "good boy out of the kitchen",
-        "dap me up"
-      ],
+      "hobby": "long walks with mom",
+      "trick": "dap me up",
       "location": "Point Breeze, Philadelphia",
       "image": "https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg",
-      "matched": false
+      "matched": true
     },
     {
       "id": 2,
@@ -26,18 +18,11 @@
       "nickname": "Bam",
       "age": "4",
       "pwo": "yes",
-      "hobbies": [
-        "sleeping",
-        "barking"
-      ],
-      "tricks": [
-        "bang",
-        "good boy out of the kitchen",
-        "dap me up"
-      ],
+      "hobby": "long walks with mom",
+      "trick": "dap me up",
       "location": "Rittenhouse, Philadelphia",
       "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/how_to_figure_dogs_age_video/1800x1200_how_to_figure_dogs_age_video.jpg?resize=750px:*",
-      "matched": true
+      "matched": false
     },
     {
       "id": 3,
@@ -45,15 +30,8 @@
       "nickname": "Butters",
       "age": "4",
       "pwo": "yes",
-      "hobbies": [
-        "fetch",
-        "looking out the window"
-      ],
-      "tricks": [
-        "sit",
-        "speak",
-        "paw"
-      ],
+      "hobby": "long walks with mom",
+      "trick": "dap me up",
       "location": "Chester, Philadelphia",
       "image": "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/Skyword/images/azawakh-dog-standing-on-path-SW.jpg",
       "matched": true
@@ -64,36 +42,20 @@
       "nickname": "June Bug",
       "age": "1",
       "pwo": "yes",
-      "hobbies": [
-        "squirrels",
-        "cats"
-      ],
-      "tricks": [
-        "catch",
-        "lay down",
-        "stay"
-      ],
+      "hobby": "long walks with mom",
+      "trick": "dap me up",
       "location": "Center City, Philadelphia",
       "image": "https://dogtime.com/assets/uploads/gallery/rottweiler-dogs-and-puppies/rottweiler-dogs-puppies-1.jpg",
       "matched": true
     },
     {
-      "name": "Aloe",
-      "age": "4",
-      "hobbies": "swimming, playing",
-      "tricks": "sit, stay",
-      "location": "Oxford, PA",
-      "image": "https://www.petlandmonroeville.com/wp-content/uploads/2020/05/18840.jpg",
+      "name": "",
+      "age": "",
+      "hobby": "",
+      "trick": "",
+      "location": "",
+      "image": "",
       "id": 5
-    },
-    {
-      "name": "Mr dog",
-      "age": "3",
-      "hobbies": "swimming, playing",
-      "tricks": "sit, stay",
-      "location": "Oxford, PA",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/01/Sheriff_Woody.png",
-      "id": 6
     }
   ]
 }

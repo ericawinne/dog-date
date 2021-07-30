@@ -4,7 +4,7 @@ function DogCard({ dog }) {
 console.log(dog)
 
   return (
-      <div className="card">
+      <div className="dogFinder-card">
         <img src={dog.image} alt={dog.name} />
         <p>📍{dog.location}</p> 
       </div>

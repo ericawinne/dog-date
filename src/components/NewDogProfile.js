@@ -3,8 +3,8 @@ import React, { useState } from "react"
 function NewDogProfile({ onAddDog }) {   //NewPlantForm
   const [name, setName] = useState("")
   const [age, setAge] = useState("")
-  const [hobbies, setHobbies] = useState([])
-  const [tricks, setTricks] = useState([])
+  const [hobby, setHobby] = useState("")
+  const [trick, setTrick] = useState("")
   const [location, setLocation] = useState("")
   const [image, setImage] = useState("")
 
@@ -18,8 +18,8 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
       body: JSON.stringify({
         name: name,
         age: age,
-        hobbies: hobbies,
-        tricks: tricks,
+        hobby: hobby,
+        trick: trick,
         location: location,
         image: image,
       }),
@@ -48,17 +48,17 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
         />
         <input
           type="text"   //since its an array do i do something different here?
-          name="hobbies"
-          placeholder="Dog Hobbies"
-          value={hobbies}
-          onChange={(e) => setHobbies(e.target.value)}
+          name="hobby"
+          placeholder="Favorite Hobby"
+          value={hobby}
+          onChange={(e) => setHobby(e.target.value)}
         />
         <input
           type="text"
           name="tricks"  //since its an array, do i do something different here?
-          placeholder="Dog Tricks"
-          value={tricks}
-          onChange={(e) => setTricks(e.target.value)}
+          placeholder="Best Trick"
+          value={trick}
+          onChange={(e) => setTrick(e.target.value)}
         />
         <input
           type="text"
@@ -75,7 +75,7 @@ function NewDogProfile({ onAddDog }) {   //NewPlantForm
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-        <button type="submit" onClick={() => alert("Thank you for submitting!")} >✅Submit to DogDate!</button>
+        <button type="submit" onClick={() => alert("Thank you for submitting a new dog!💕")} >✅Submit to DogDate!</button>
       </form>
     </div>
   );

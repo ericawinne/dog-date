@@ -10,14 +10,16 @@ function DogFinder({ onLiked, currentDogInfo, onNextDog }) {
 
     <div>
       <h1>DogDate💕🐶</h1>
+      <h2>{currentDogInfo.name}</h2>
        <DogCard dog={currentDogInfo} />
-       <p>Name: {currentDogInfo.name}</p>
+       <div>
       {currentDogInfo.matched ? 
         <button onClick={handleLike}>un-match!💔</button>
         : 
-        <button className="primary" onClick={handleLike}>Like</button>
+        <button onClick={handleLike}>Like</button>
       }
-       <button onClick={onNextDog}>Next Dog Please</button>
+       <button onClick={onNextDog}> ---->   Next Dog Please  ----> </button>
+       </div>
     </div>
   )
 }

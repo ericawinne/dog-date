@@ -45,52 +45,13 @@ nav a.active {
   color: white;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  max-width: 300px;
-  max-height: 200px;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  max-width: 300px;
-  max-height: 200px;
-}
-
-/* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
-  max-width: 300px;
-  max-height: 200px;
-}
+  padding: 200px 600px;
+  max-width: 400px;
+  max-height: 400px;
+} 
 
-/* Trying to use this for the toggle LIKE/Match button */
-button {
-  padding: 0.25rem 1rem;
-  font-family: inherit;
-  border: none;
-  cursor: pointer;
-}
-
-button.primary {
-  background-color: var(--green);
-  color: white;
-}
-
-.app {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-/* might not work or be useful
-#toy-collection {
-  margin: 2rem;
-}
-
-.card {
+.dogFinder-card {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
@@ -98,16 +59,16 @@ button.primary {
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #e04b52;
-}
+  box-shadow: 3px 4px#c7b5c5;
+} 
 
-.toy-avatar {
-  justify-self: center;
-  height: 12rem;
-  width: auto;
-}
-
-
-className="toy-avatar" (add to dogDate line 25 if im using ^^^)
-
-*/
+.dogDates-card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px#c7b5c5;
+} 
