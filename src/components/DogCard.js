@@ -18,8 +18,11 @@ const DogCard = ({ dog }) => {
     return (
       <div onClick={handleClick} className="dogDate-cards" key={dog.id}>
         <h4>📍 {dog.location}</h4>
-        <img className="dogMatchCard" src={dog.image}
-        alt={dog.name}/>
+        <img
+          alt={dog.name}
+          className="dogMatchCard"
+          src={dog.image}
+        />
         <br/>
         <b>Favorite hobby:</b>
         <a> {`"${dog.hobby}"`} </a>

@@ -1,6 +1,12 @@
 import React from "react"
 import DogCard from "./DogCard"
 
+const ToggleLikeButton = ({ onLike, matched }) => (
+  <button onClick={onLike}>
+    {matched ? "un-match!💔" : "Like"}
+  </button>
+)
+
 const DogFinder = ({ onLiked, currentDogInfo, onNextDog }) => {
   const handleLike = () => {
     onLiked(currentDogInfo)
@@ -12,12 +18,8 @@ const DogFinder = ({ onLiked, currentDogInfo, onNextDog }) => {
       <h2>{currentDogInfo.name}</h2>
        <DogCard dog={currentDogInfo} />
        <div>
-      {currentDogInfo.matched ? 
-        <button onClick={handleLike}>un-match!💔</button>
-        : 
-        <button onClick={handleLike}>Like</button>
-      }
-       <button onClick={onNextDog}> ---->   Next Dog Please  ----> </button>
+         <ToggleLikeButton matched={currentDogInfo.matched} onLike={handleLike} />
+       <button onClick={onNextDog}>{"---->   Next Dog Please  ---->"}</button>
        </div>
     </div>
   )

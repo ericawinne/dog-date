@@ -5,6 +5,7 @@ import DogFinder from "./DogFinder"
 import DogDates from "./DogDates"
 import NewDogProfile from "./NewDogProfile"
 import Home from "./Home"
+import { toggleLikeDog, listDogs } from "./api"
 
 const App = () => {
   const [dogs, setDogs] = useState([])
@@ -17,23 +18,11 @@ const App = () => {
   }
 
   const handleLikedToggle = (match) => {
-    const id = match.id
-    const updateObj = {
-      matched: !currentDogInfo.matched
-    }
-    if (match.matched === false) {
-      alert("✨✨💕It's a Match!💕✨✨")
-    }
-
-    fetch(`http://localhost:4000/dogs/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(updateObj)
-    })
-      .then((r) => r.json())
+    toggleLikeDog(match)
       .then(data => {
+        if (!match.matched) {
+          alert("✨✨💕It's a Match!💕✨✨")
+        }
         const updatedDogs = dogs.map(dog => {
           if (dog.id === data.id) {
             setCurrentDogInfo(data)
@@ -53,12 +42,10 @@ const App = () => {
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/dogs")
-      .then((response) => response.json())
-      .then(data => {
-        setDogs(data)
-        setCurrentDogInfo(data[currentDog])
-      })
+    listDogs().then((dogs) => {
+      setDogs(dogs)
+      setCurrentDogInfo(dogs[currentDog])
+    })
   }, [currentDog])
 
   if (!currentDogInfo) {

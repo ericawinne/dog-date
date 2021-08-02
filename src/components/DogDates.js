@@ -1,7 +1,7 @@
 import React from "react"
 
 const DogDates = ({ dogs, onUnMatch }) => {
-  const likeDogs = dogs.filter(dog => dog.matched === true)
+  const likeDogs = dogs.filter(dog => dog.matched)
 
   return (
       <div>
@@ -10,8 +10,8 @@ const DogDates = ({ dogs, onUnMatch }) => {
             return (
             <div className="dogDate-cards" key={match.id}>
               <h2>{match.name} {match.nickname}</h2>
-              <a>Favorite hobby: {`"`}{match.hobby}{`"`} </a>
-              <a>Best trick: {`"`}{match.trick}{`"`} </a>
+              <a>Favorite hobby: &quot;{match.hobby}&quot;</a>
+              <a>Best trick: &quot;{match.trick}&quot; </a>
               <p>Age: {match.age}</p>
               <h4>📍 {match.location}</h4>
               <img className="dogMatchCard" src={match.image}
