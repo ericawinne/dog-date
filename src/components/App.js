@@ -6,21 +6,22 @@ import DogDates from "./DogDates"
 import NewDogProfile from "./NewDogProfile"
 import Home from "./Home"
 
-function App () {
+const App = () => {
   const [dogs, setDogs] = useState([])
   const [currentDog, setCurrentDog] = useState(0)
   const [currentDogInfo, setCurrentDogInfo] = useState(null)
 
-  function handleAddDog (newDog) {
+  const handleAddDog = (newDog) => {
     const updatedDogFinderArray = [...dogs, newDog]
     setDogs(updatedDogFinderArray)
   }
 
-  const handleLikedToggle = (id) => {
+  const handleLikedToggle = (match) => {
+    const id = match.id
     const updateObj = {
       matched: !currentDogInfo.matched
     }
-    if (currentDogInfo.matched === false) {
+    if (match.matched === false) {
       alert("✨✨💕It's a Match!💕✨✨")
     }
 

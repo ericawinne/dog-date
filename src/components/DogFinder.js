@@ -1,13 +1,12 @@
 import React from "react"
 import DogCard from "./DogCard"
 
-function DogFinder({ onLiked, currentDogInfo, onNextDog }) {
+const DogFinder = ({ onLiked, currentDogInfo, onNextDog }) => {
   const handleLike = () => {
-    onLiked(currentDogInfo.id)
+    onLiked(currentDogInfo)
   }
 
   return (
-
     <div>
       <h1>DogDate💕🐶</h1>
       <h2>{currentDogInfo.name}</h2>

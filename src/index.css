@@ -65,6 +65,7 @@ nav a.active {
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px#c7b5c5;
+  background-color: rgb(219, 214, 214);
 } 
 
 .dogDates-card {
@@ -87,14 +88,16 @@ nav a.active {
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px#c7b5c5;
+  background-color: rgb(183, 205, 241);
 }
 
 .dogMatchCard {
   justify-self: center;
   height: 10rem;
   width: 10rem;
-  padding-top: 0px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  background-color: #c7b5c5;
 }

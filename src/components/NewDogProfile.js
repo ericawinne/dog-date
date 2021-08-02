@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function NewDogProfile ({ onAddDog }) { // NewPlantForm
+const NewDogProfile = ({ onAddDog }) => {
   const [name, setName] = useState("")
   const [age, setAge] = useState("")
   const [hobby, setHobby] = useState("")
@@ -8,7 +8,7 @@ function NewDogProfile ({ onAddDog }) { // NewPlantForm
   const [location, setLocation] = useState("")
   const [image, setImage] = useState("")
 
-  function handleSubmit (e) {
+  const handleSubmit = (e) => {
     e.preventDefault()
     fetch("http://localhost:4000/dogs", {
       method: "POST",

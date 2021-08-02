@@ -2,50 +2,262 @@
   "dogs": [
     {
       "id": 1,
-      "name": "Benny",
-      "nickname": "Butters",
+      "name": "Benny \"Butters\"",
       "age": "4",
-      "pwo": "yes",
-      "hobby": "long walks with mom",
-      "trick": "dap me up",
+      "hobby": "Long walks with mom",
+      "trick": "Dap me up",
       "location": "Point Breeze, Philadelphia",
-      "image": "https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg",
-      "matched": true
-    },
-    {
-      "id": 2,
-      "name": "Bambino",
-      "nickname": "Bam",
-      "age": "4",
-      "pwo": "yes",
-      "hobby": "long walks with mom",
-      "trick": "dap me up",
-      "location": "Rittenhouse, Philadelphia",
-      "image": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/video/how_to_figure_dogs_age_video/1800x1200_how_to_figure_dogs_age_video.jpg?resize=750px:*",
+      "image": "https://i.imgur.com/B13wBXC.jpg",
       "matched": false
     },
     {
-      "id": 3,
-      "name": "Chloe",
-      "nickname": "Butters",
+      "id": 2,
+      "name": "Bambino \"Bam\"",
       "age": "4",
-      "pwo": "yes",
-      "hobby": "long walks with mom",
-      "trick": "dap me up",
-      "location": "Chester, Philadelphia",
-      "image": "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/Skyword/images/azawakh-dog-standing-on-path-SW.jpg",
+      "hobby": "Anxiety",
+      "trick": "Salute",
+      "location": "West Grove, PA",
+      "image": "https://i.imgur.com/W9CvbWB.jpg",
       "matched": true
+    },
+    {
+      "id": 3,
+      "name": "Chloe \"Closeph\"",
+      "age": "4",
+      "hobby": "Sunbathing",
+      "trick": "Watching HGTV",
+      "location": "Chester, Philadelphia",
+      "image": "https://i.imgur.com/nXMWzC6.jpg",
+      "matched": false
     },
     {
       "id": 4,
       "name": "Juno",
       "nickname": "June Bug",
       "age": "1",
-      "pwo": "yes",
-      "hobby": "long walks with mom",
-      "trick": "dap me up",
-      "location": "Center City, Philadelphia",
-      "image": "https://dogtime.com/assets/uploads/gallery/rottweiler-dogs-and-puppies/rottweiler-dogs-puppies-1.jpg",
+      "hobby": "Mud Bathing",
+      "trick": "Find your toy",
+      "location": "Austin, TX",
+      "image": "https://i.imgur.com/ob4anTA.jpg",
+      "matched": false
+    },
+    {
+      "name": "Tuco",
+      "age": "5",
+      "hobby": "Chasing the cat",
+      "trick": "Giving good snuggles",
+      "location": "Rochester, NY",
+      "image": "https://i.imgur.com/cjWLZWO.jpg",
+      "id": 5,
+      "matched": false
+    },
+    {
+      "name": "Cooper",
+      "age": "6",
+      "hobby": "Swimming in the lake",
+      "trick": "Interior decorating with my fur",
+      "location": "Milkwaukee, WI",
+      "image": "https://i.imgur.com/5085brV.jpg",
+      "id": 6,
+      "matched": false
+    },
+    {
+      "name": "Lucy \"Lucifer\"",
+      "age": "5",
+      "hobby": "Car rides",
+      "trick": "Being cute",
+      "location": "Milwaukee, WI",
+      "image": "https://i.imgur.com/vQH8ulT.jpg",
+      "id": 7,
+      "matched": false
+    },
+    {
+      "name": "Leo",
+      "age": "4",
+      "hobby": "Human food",
+      "trick": "Catch",
+      "location": "Tampa, FL",
+      "image": "https://i.imgur.com/rL3pFj1.jpg",
+      "id": 8,
+      "matched": false
+    },
+    {
+      "name": "Kobe",
+      "age": "1",
+      "hobby": "Pooping in the house!💩",
+      "trick": "Going through trash",
+      "location": "Tampa, FL",
+      "image": "https://i.imgur.com/vXQPgRl.jpg",
+      "id": 9,
+      "matched": false
+    },
+    {
+      "name": "Ted \"Hunky-Punky\"",
+      "age": "3",
+      "hobby": "Long walks & meeting new pup friends",
+      "trick": "Lay down",
+      "location": "Virginia Beach, VA",
+      "image": "https://i.imgur.com/LEzeJPH.jpg",
+      "id": 10,
+      "matched": false
+    },
+    {
+      "name": "Duke \"Dukie\"",
+      "age": "8",
+      "hobby": "Fetch",
+      "trick": "Paw",
+      "location": "Wilmington, DE",
+      "image": "https://i.imgur.com/UnAIbVX.jpg",
+      "id": 11,
+      "matched": false
+    },
+    {
+      "name": "Boo \"The-Cuteness\"",
+      "age": "2",
+      "hobby": "Telling jokes",
+      "trick": "Being cute",
+      "location": "Philadelphia, PA",
+      "image": "https://i.imgur.com/9obmJWH.jpg",
+      "id": 12,
+      "matched": true
+    },
+    {
+      "name": "Reba \"Snuffle-Puffs\"",
+      "age": "4",
+      "hobby": "Chasing Squirrels",
+      "trick": "Stretch",
+      "location": "NoLibs, Philadelphia",
+      "image": "https://i.imgur.com/sYvVZAl.jpg",
+      "id": 13,
+      "matched": false
+    },
+    {
+      "name": "Cha Cha",
+      "age": "1",
+      "hobby": "Chewing on ice",
+      "trick": "High five",
+      "location": "New Brunswick, NJ",
+      "image": "https://i.imgur.com/dhe7O4d.jpg",
+      "id": 15,
+      "matched": false
+    },
+    {
+      "name": "Charlie \"Chuck\"",
+      "age": "5",
+      "hobby": "Go for Rides",
+      "trick": "Speak",
+      "location": "New Brunswick, NJ",
+      "image": "https://i.imgur.com/uNPagEZ.jpg",
+      "id": 16,
+      "matched": false
+    },
+    {
+      "name": "Macky \"Doodle Bop\"",
+      "age": "6",
+      "hobby": "Sun Bathing",
+      "trick": "Hunting yard rodents",
+      "location": "West Grove, PA",
+      "image": "https://i.imgur.com/vIGjAl4.jpg",
+      "id": 17,
+      "matched": true
+    },
+    {
+      "name": "Loki \"Dokey\"",
+      "age": "12",
+      "hobby": "Road Trips",
+      "trick": "Won't take treats from Trump",
+      "location": "Chesapeake City, MD",
+      "image": "https://i.imgur.com/5bxuG9J.jpg",
+      "id": 18,
+      "matched": false
+    },
+    {
+      "name": "Poppy \"Pop-ay\"",
+      "age": "2",
+      "hobby": "Hood rat stuff",
+      "trick": "Surfing",
+      "location": "Chesapeake City, MD",
+      "image": "https://i.imgur.com/x0Td60i.png",
+      "id": 19,
+      "matched": false
+    },
+    {
+      "name": "Sullivan \"Sully\"",
+      "age": "1",
+      "hobby": "Sleeping",
+      "trick": "Roll Over",
+      "location": "Philadelphia, PA",
+      "image": "https://i.imgur.com/bmrOOl0.jpg",
+      "id": 20,
+      "matched": false
+    },
+    {
+      "name": "Zelda",
+      "age": "1",
+      "hobby": "Low-frequency growling",
+      "trick": "Spot",
+      "location": "Wayne, PA",
+      "image": "https://i.imgur.com/9l9UQcb.jpg",
+      "id": 21,
+      "matched": false
+    },
+    {
+      "name": "Pupperoni MF Wenhold \"Honey\"",
+      "age": "4",
+      "hobby": "Chasing Squirrels",
+      "trick": "Spin around",
+      "location": "Memphis, TN",
+      "image": "https://i.imgur.com/5eWALIj.jpg",
+      "id": 22,
+      "matched": false
+    },
+    {
+      "name": "Maya",
+      "age": "2",
+      "hobby": "People watching",
+      "trick": "High five",
+      "location": "Norristown, PA",
+      "image": "https://i.imgur.com/EcfwLF9.jpg",
+      "id": 23
+    },
+    {
+      "name": "Wall-e \"Uncle Wall\"",
+      "age": "9",
+      "hobby": "Car rides",
+      "trick": "Stealing loaves of bread",
+      "location": "Oxford, PA",
+      "image": "https://i.imgur.com/hRuSEFt.jpg",
+      "id": 24,
+      "matched": false
+    },
+    {
+      "name": "Frida \"Fritz\"",
+      "age": "3",
+      "hobby": "Playing ball ",
+      "trick": "I caught a squirrel once",
+      "location": "Oxford, PA",
+      "image": "https://i.imgur.com/deaOGz1.jpg",
+      "id": 25,
+      "matched": false
+    },
+    {
+      "name": "Sullivan \"Mr Butts\"",
+      "age": "4",
+      "hobby": "Playing at the beach",
+      "trick": "Sit, paw, rollover (all done at once)",
+      "location": "Mt. Pleasant, SC",
+      "image": "https://i.imgur.com/6u5XOTd.jpg",
+      "id": 26,
+      "matched": false
+    },
+    {
+      "name": "Diesel \"Diesel Butt\"",
+      "age": "9",
+      "hobby": "Guarding the yard from intruders",
+      "trick": "Hide & seek",
+      "location": "Landenberg,PA",
+      "image": "https://i.imgur.com/7U4BHan.jpg",
+      "id": 27,
       "matched": false
     }
   ]
